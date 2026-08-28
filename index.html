@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#040815" />
+    <meta name="description" content="周渝哲——硬件产品经理、具身智能产品实践者。" />
+    <title>周渝哲｜硬件产品经理</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#story">跳至内容</a>
+
+    <div class="stage" aria-hidden="true">
+      <div class="scene is-visible" data-scene-layer="0" style="--focus: 58% 50%">
+        <img src="./assets/scenes/01-explorer.png" alt="" />
+      </div>
+      <div class="scene" data-scene-layer="1" style="--focus: 62% 50%">
+        <img src="./assets/scenes/02-team.png" alt="" />
+      </div>
+      <div class="scene" data-scene-layer="2" style="--focus: 67% 50%">
+        <img src="./assets/scenes/03-builder.png" alt="" />
+      </div>
+      <div class="scene" data-scene-layer="3" style="--focus: 66% 50%">
+        <img src="./assets/scenes/04-frontier.png" alt="" />
+      </div>
+      <div class="scene" data-scene-layer="4" style="--focus: 70% 50%">
+        <img src="./assets/scenes/05-jobs-v2.png" alt="" />
+      </div>
+      <canvas class="atmosphere" data-atmosphere></canvas>
+      <div class="scan-glow"></div>
+      <div class="veil"></div>
+      <div class="grain"></div>
+    </div>
+
+    <header class="site-head">
+      <a class="brand" href="#top" aria-label="周渝哲，返回首页">
+        <span class="brand__signal"></span>
+        <span>周渝哲 / ZYZ</span>
+      </a>
+      <nav aria-label="主要导航">
+        <a href="#team">协作</a>
+        <a href="#practice">产品</a>
+        <a href="#frontier">探索</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <p class="chapter-count"><span data-chapter-number>01</span> / 06</p>
+    </header>
+
+    <aside class="progress-rail" aria-hidden="true">
+      <span class="progress-rail__line"><i data-progress></i></span>
+      <span>SCROLL TO EXPLORE</span>
+    </aside>
+
+    <div class="detail-scrim" data-detail-scrim></div>
+    <aside class="detail-panel" data-detail-panel data-side="left" aria-hidden="true" aria-label="项目详情">
+      <button class="detail-panel__close" type="button" data-detail-close aria-label="关闭项目详情">关闭 <span>×</span></button>
+      <p class="detail-panel__kicker" data-detail-kicker></p>
+      <h2 data-detail-title></h2>
+      <p class="detail-panel__summary" data-detail-summary></p>
+      <ul data-detail-list></ul>
+    </aside>
+
+    <main id="story">
+      <section class="chapter chapter--hero" id="top" data-scene="0" data-chapter="01">
+        <div class="chapter__content">
+          <p class="eyebrow">AI HARDWARE · EMBODIED INTELLIGENCE</p>
+          <h1 data-reveal-lines><span class="reveal-line">周渝哲</span></h1>
+          <p class="hero-role">硬件产品经理</p>
+          <p class="hero-thesis" data-reveal-lines><span class="reveal-line">从算法、供应链到具身智能产品，</span><span class="reveal-line">把复杂技术变成真实世界里的产品价值。</span></p>
+        </div>
+        <dl class="hero-meta">
+          <div><dt>FOCUS</dt><dd>具身智能 / AI 硬件</dd></div>
+          <div><dt>EDUCATION</dt><dd>悉尼大学 · 数据科学</dd></div>
+          <div><dt>STATUS</dt><dd>探索进行中</dd></div>
+        </dl>
+        <button class="easter-egg easter-egg--star" type="button" data-easter="star" aria-label="发现星空彩蛋"><span>✦</span></button>
+      </section>
+
+      <section class="chapter chapter--right" id="team" data-scene="1" data-chapter="02">
+        <div class="chapter__content chapter__content--narrow">
+          <p class="eyebrow">02 / COLLABORATION</p>
+          <h2 data-reveal-lines><span class="reveal-line">把一个人的想法，</span><span class="reveal-line">变成一群人的胜利。</span></h2>
+          <p class="chapter__lead">全国最大具身智能黑客松「探月计划」产品负责人，主导桌面冰球机械臂定位、语音交互和产品叙事。</p>
+          <button class="detail-trigger achievement" type="button" data-detail="hackathon" data-panel-side="left" aria-expanded="false">
+            <strong>BEST TEAMWORK</strong>
+            <span>最佳团队协作奖 · 2026</span>
+          </button>
+        </div>
+        <button class="easter-egg easter-egg--trophy" type="button" data-easter="trophy" aria-label="发现奖杯彩蛋"><span>✦</span></button>
+      </section>
+
+      <section class="chapter" id="practice" data-scene="2" data-chapter="03">
+        <div class="chapter__content">
+          <p class="eyebrow">03 / BUILD THE SYSTEM</p>
+          <h2 data-reveal-lines><span class="reveal-line">在硬件里，</span><span class="reveal-line">寻找产品的秩序。</span></h2>
+          <p class="chapter__lead">浪潮云 · 山东海若具身智能产品经理，覆盖 5 条硬件产品线，连接机器人、算力、供应商与真实客户。</p>
+          <div class="project-list">
+            <button class="detail-trigger project-row" type="button" data-detail="delivery" data-panel-side="right" aria-expanded="false">
+              <span>01</span>
+              <div><h3>配送巡检复合机器人</h3><p>从 0 到 1 · 模块化硬件架构 · 样机验证</p></div>
+            </button>
+            <button class="detail-trigger project-row" type="button" data-detail="dispatch" data-panel-side="right" aria-expanded="false">
+              <span>02</span>
+              <div><h3>海若具身智能调度平台</h3><p>异构兼容 · 确定性大脑 · 商业闭环</p></div>
+            </button>
+            <button class="detail-trigger project-row" type="button" data-detail="grid" data-panel-side="right" aria-expanded="false">
+              <span>03</span>
+              <div><h3>空地协同输电作业机器人</h3><p>国网 POC · 硬件架构 · 极端工况安全</p></div>
+            </button>
+          </div>
+        </div>
+        <button class="easter-egg easter-egg--circuit" type="button" data-easter="circuit" aria-label="发现电路彩蛋"><span>⌁</span></button>
+      </section>
+
+      <section class="chapter chapter--metrics" id="results" data-scene="2" data-chapter="04">
+        <div class="chapter__content chapter__content--wide">
+          <p class="eyebrow">04 / PROOF, NOT PROMISES</p>
+          <h2 data-reveal-lines><span class="reveal-line">产品，最终要进入现实。</span></h2>
+          <div class="metrics">
+            <button class="detail-trigger metric-card" type="button" data-detail="dispatch" data-panel-side="right" aria-expanded="false"><strong data-count="70.7" data-decimals="1">0</strong><span>万元</span><p>具身智能平台签约营收</p><small>点击查看项目来源</small></button>
+            <button class="detail-trigger metric-card" type="button" data-detail="startup" data-panel-side="left" aria-expanded="false"><strong data-count="117">0</strong><span>万元 GMV</span><p>跨境硬件创业验证</p><small>点击查看项目来源</small></button>
+            <button class="detail-trigger metric-card" type="button" data-detail="byd" data-panel-side="left" aria-expanded="false"><strong data-count="19" data-prefix="+">0</strong><span>%</span><p>比亚迪算法准确率提升</p><small>点击查看项目来源</small></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--right" id="frontier" data-scene="3" data-chapter="05">
+        <div class="chapter__content chapter__content--narrow">
+          <p class="eyebrow">05 / INTO THE UNKNOWN</p>
+          <h2 data-reveal-lines><span class="reveal-line">边界不是终点，</span><span class="reveal-line">是下一次定义的开始。</span></h2>
+          <div class="frontier-list">
+            <button class="detail-trigger" type="button" data-detail="cube" data-panel-side="left" aria-expanded="false"><span>0→1</span><h3>家庭 AI 终端 AI CUBE</h3><p>本地大模型、多模态感知与家庭隐私围栏。</p></button>
+            <button class="detail-trigger" type="button" data-detail="startup" data-panel-side="left" aria-expanded="false"><span>CEO</span><h3>跨境硬件创业</h3><p>SKU、供应链和增长闭环的完整商业验证。</p></button>
+          </div>
+        </div>
+        <button class="easter-egg easter-egg--plant" type="button" data-easter="plant" aria-label="发现发光植物彩蛋"><span>✦</span></button>
+      </section>
+
+      <section class="chapter chapter--closing" id="contact" data-scene="4" data-chapter="06">
+        <div class="closing-lockup">
+          <p class="eyebrow">06 / THE BELIEF</p>
+          <h2>
+            <span class="quote-line quote-line--first">Stay hungry.</span>
+            <span class="quote-line quote-line--second"><em>Stay foolish.</em></span>
+          </h2>
+          <p class="closing-attribution">STEVE JOBS · STANFORD · 2005</p>
+          <p class="closing-response"><span>所以，</span>我仍在寻找下一个值得被做出来的产品。</p>
+          <div class="closing-actions">
+            <button type="button" data-resume-open>查看 PDF 简历 <span>↗</span></button>
+            <a href="mailto:zhouyuzhe112@163.com">zhouyuzhe112@163.com <span>↗</span></a>
+          </div>
+        </div>
+        <p class="closing-note">HARDWARE PRODUCT MANAGER · 2026</p>
+      </section>
+    </main>
+
+    <div class="discovery-toast" data-discovery-toast role="status" aria-live="polite">
+      <span data-discovery-label></span>
+      <strong data-discovery-text></strong>
+    </div>
+
+    <div class="resume-modal" data-resume-modal aria-hidden="true">
+      <button class="resume-modal__scrim" type="button" data-resume-close tabindex="-1" aria-label="关闭简历预览"></button>
+      <section class="resume-viewer" role="dialog" aria-modal="true" aria-labelledby="resume-viewer-title">
+        <header>
+          <div>
+            <p>CURRICULUM VITAE</p>
+            <h2 id="resume-viewer-title">周渝哲 · PDF 简历</h2>
+          </div>
+          <div class="resume-viewer__actions">
+            <a href="./assets/docs/zhou-yuzhe-resume.pdf" download>下载 PDF</a>
+            <button type="button" data-resume-close aria-label="关闭简历预览">关闭 <span>×</span></button>
+          </div>
+        </header>
+        <iframe data-resume-frame data-src="./assets/docs/zhou-yuzhe-resume.pdf#view=FitH" title="周渝哲 PDF 简历"></iframe>
+      </section>
+    </div>
+  </body>
+</html>
